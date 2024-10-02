@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Styles2.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Nunito:wght@400;700&display=swap"
+      rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    
+
+    </div>
+    <form action="" method="POST">
+      <div class="background"></div>
+      <fieldset>
+        <legend>inserisci le tue credenziali</legend>
+        <label for="email">
+          Email:
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="inserisci email"
+            required />
+        </label>
+        <label for="password">
+          Pasword:
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="inserisci password"
+            required />
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Seleziona il tuo genere</legend>
+        <label for="uomo">
+          <input
+            type="radio"
+            id="uomo"
+            value="uomo"
+            name="genere"
+            required />uomo</label
+        >
+        <label for="femmina">
+          <input
+            type="radio"
+            id="donna"
+            value="donna"
+            name="genere"
+            required />donna</label
+        >
+        <label for="non-dirlo">
+          <input
+            type="radio"
+            id="non-dirlo"
+            value="non-dirlo"
+            name="genere"
+            required />preferisco non dirlo</label
+        >
+      </fieldset>
+      <fieldset>
+        <legend>Seleziona il paese in cui abiti</legend>
+        <label for="paese">Paese di Residenza</label>
+        <select name="paese" id="paese" required>
+          <option value="">Seleziona il tuo paese</option>
+          <option value="IT">Italia</option>
+          <option value="FR">Francia</option>
+          <option value="SP">Spagna</option>
+          <option value="GM">Germania</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Seleziona i tuoi interessi</legend>
+        <input type="checkbox" id="sport" name="interessi[]" value="sport" />
+        <label for="sport">Sport</label>
+        <input
+          type="checkbox"
+          id="tecnologia"
+          name="interessi[]"
+          value="tecnologia" />
+        <label for="tecnologia">Tecnologia</label>
+        <input type="checkbox" id="musica" name="interessi[]" value="musica" />
+        <label for="musica">Musica</label>
+        <input type="checkbox" id="viaggi" name="interessi[]" value="viaggi" />
+        <label for="viaggi">Viaggi</label>
+      </fieldset>
+      <br />
+      <button type="submit" onclick="alert('hai inviato il modulo')">
+        Invia
+      </button>
+      <button type="reset">reset</button>
+    </form>
+  </body>
+</html>

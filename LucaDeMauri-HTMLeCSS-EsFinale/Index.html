@@ -1,0 +1,161 @@
+<!-- per quanto riguarda lo stile inline sono abituato dalla scuola superiore ad usare delle sotto classi o a selezionare direttamente i figli, come ad esempio
+     class="nav info"(per sottoclassi) e .info h1(per i figli in css)-->
+
+<!DOCTYPE html>
+<html lang="it-IT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="”Google”" content="pagina di collegamento a google" />
+    <link rel="stylesheet" href="Styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Nunito:wght@400;700&display=swap"
+      rel="stylesheet" />
+    <title>Collegamento Google</title>
+    <style>
+      /*non so cosa mettere ho già messo tutto nel file esterno*/
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav logo">
+          <a href="https://www.google.com"
+            ><img src="./immagini/logo.svg" alt="logo Google"
+          /></a>
+        </div>
+        <div class="nav info">
+          <p><a href="#info">Chi siamo</a></p>
+        </div>
+        <div class="nav collegamento">
+          <p><a href="#collegamento">come raggiungerci</a></p>
+        </div>
+        <div class="nav possibilità">
+          <p><a href="#possibilità">cosa offriamo</a></p>
+        </div>
+        <div class="nav registrazione">
+          <button onclick="window.location.href='sign-up.html';">
+            registrati
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <article>
+        <section class="info">
+          <h1 id="info">Info</h1>
+          <p>
+            Google è una multinazionale tecnologica statunitense fondata nel
+            1998 da Larry Page e Sergey Brin. È principalmente conosciuta per il
+            suo motore di ricerca, uno dei più utilizzati al mondo, che permette
+            agli utenti di trovare informazioni su Internet. Oltre al motore di
+            ricerca, Google offre una vasta gamma di servizi e prodotti
+            digitali, come Gmail (email), Google Maps (mappe), Google Drive
+            (archiviazione cloud), YouTube (video), e il sistema operativo
+            Android per dispositivi mobili. Fa parte di Alphabet Inc., la
+            società madre creata per gestire le sue varie attività.
+          </p>
+        </section>
+        <hr />
+        <section class="collegamento" id="collegamento">
+          <h3>come raggiungere Google:</h3>
+          <p>
+            questo è un <strong>collegamento</strong> a
+            <a href="https://www.google.com"> Google </a>
+          </p>
+          <img src="./immagini/google.png" alt="google img" id="google-img" />
+        </section>
+        <hr />
+        <section class="possibilità">
+          <h3 id="possibilità">cosa puoi fare con Google?</h3>
+          <ol type="1">
+            <li>Guardare o ascoltare contenuti multimediali.</li>
+            <li>Svolgere attività</li>
+            <li>Gestire le attività</li>
+          </ol>
+        </section>
+
+        <section class="vantaggi">
+          <table>
+            <thead>
+              <tr>
+                <th>Ambito</th>
+                <th>Descrizione</th>
+                <th>Vantaggio di Google</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="color: red">Velocità</td>
+                <td>
+                  Google è noto per offrire risultati di ricerca molto rapidi
+                  grazie alla sua infrastruttura altamente ottimizzata e a una
+                  rete di data center globali.
+                </td>
+                <td>
+                  Tempi di risposta ridotti, con i risultati visualizzati in
+                  pochi millisecondi.
+                </td>
+              </tr>
+              <tr>
+                <td style="color: blue">Precisione dei Risultati</td>
+                <td>
+                  Il motore di ricerca di Google utilizza algoritmi avanzati per
+                  restituire risultati rilevanti basati su una vasta gamma di
+                  segnali, come parole chiave, contesto e cronologia
+                  dell'utente.
+                </td>
+                <td>
+                  Alta pertinenza e accuratezza grazie all'algoritmo di PageRank
+                  e aggiornamenti costanti come il BERT e il RankBrain.
+                </td>
+              </tr>
+              <tr>
+                <td style="color: green">Indicizzazione</td>
+                <td>
+                  Google ha il più grande indice di pagine web al mondo,
+                  garantendo una copertura completa e aggiornata di internet.
+                </td>
+                <td>
+                  Indicizza rapidamente nuovi contenuti e gestisce miliardi di
+                  pagine.
+                </td>
+              </tr>
+              <tr>
+                <td style="color: orange">Funzioni Avanzate</td>
+                <td>
+                  Google offre una serie di funzionalità extra, come Google
+                  Images, Google Maps, Google Shopping e Knowledge Graph, che
+                  migliorano l'esperienza utente.
+                </td>
+                <td>
+                  Ricerca avanzata con integrazione di immagini, notizie, video,
+                  shopping e risposte rapide.
+                </td>
+              </tr>
+              <tr>
+                <td style="color: blue">Pubblicità</td>
+                <td>
+                  Google AdWords (ora Google Ads) è il sistema di pubblicità
+                  leader nel campo
+                </td>
+                <td>Offre strumenti avanzati per campagne pubblicitarie.</td>
+              </tr>
+            </tbody>
+            <tfoot></tfoot>
+          </table>
+        </section>
+        <hr />
+      </article>
+      <aside>
+        <img src="./immagini/google-ads.jpg" alt="google-ads-img" />
+      </aside>
+    </main>
+    <footer>
+      <p>Pagina scritta da <em>Luca De Mauri</em></p>
+    </footer>
+    <!--TODO: aggiungere stile e gli script-->
+    <script src="script.js"></script>
+  </body>
+</html>

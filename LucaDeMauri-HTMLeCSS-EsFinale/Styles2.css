@@ -1,0 +1,84 @@
+body {
+  text-align: center;
+  font-family: sans-serif, "Montserrat";
+  height: 100vh;
+  width: 100vw;
+  
+}
+
+form {
+  margin: 5% 35% 5% 35%;
+  
+}
+
+fieldset {
+  margin: 3em 0 0 0;
+  padding: 1em;
+  border: 1px solid black;
+}
+
+legend {
+  padding: 0 1em 0 1em;
+  font-family: "Montserrat";
+  font-weight: bold;
+}
+
+fieldset:nth-of-type(1) label {
+  display: block;
+  padding: 0.4em 0 0 0;
+}
+
+input,
+select {
+  padding: 0.5em;
+  font-size: 1em;
+  border: 2px solid #d9d9d9;
+  border-radius: 5px;
+}
+
+input:focus,
+select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.8);
+}
+
+button[type="submit"] {
+  height: 60%;
+  width: 10;
+  font-size: medium;
+  background-color: red;
+  border: 3px solid black;
+  border-radius: 20%;
+  box-shadow: 2px 3px 10px rgb(45, 45, 45);
+}
+
+button[type="submit"]:hover {
+  background-color: black;
+  color: white;
+}
+
+button[type="reset"] {
+  height: 60%;
+  width: 10;
+  font-size: medium;
+  background-color: red;
+  border: 3px solid black;
+  border-radius: 20%;
+  box-shadow: 2px 3px 10px rgb(45, 45, 45);
+}
+button[type="reset"]:hover {
+  background-color: black;
+  color: white;
+}
+
+/*.background {
+  position: absolute;
+  background-color: rgba(248, 81, 81, 0.8);
+  left: 30%;
+  top: 0%;
+  width: 40%;
+  height: 100%;
+  z-index: -1;
+  
+}*/
+
