@@ -1,3 +1,4 @@
 # Corso-NGW-Plus
 Cartella contente gli esercizi del corso NGW+
- - HTML e CSS 
+ - HTML e CSS 30/09/2024
+ - HTML e CSS 01/10/2024
