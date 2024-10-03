@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <h1>Codice Esempio CAPITOLO 5</h1>
+    </main>
+    <footer></footer>
+    <script src="utility.js"></script>
+    <script>
+      let data = ["nome", "cognome", "eta"];
+      data.push("anno_nascita");
+      console.log(data);
+      //la posizione a cui aggiungerlo, dichiara lo shift, il valore dell'elemento da aggiungere
+      data.splice(0, 0, "luca");
+      console.log(data);
+      //aggiunge all'inizio della lista
+      data.unshift("luca");
+      //rimuove dalla lista il primo elemento
+      data.shift();
+      console.log(data);
+
+      function somma(a, b) {
+        let res = a + b;
+        return res;
+      }
+      let a = 70;
+      let b = 100;
+      let risultato = somma(a, b);
+      console.log(risultato);
+
+      let lista_2 = [1, 2, 3, 4, 5];
+      let risultato_lista = sommalista(lista_2);
+      console.log(risultato_lista);
+
+      /*grazie al prompt possiamo ricevere valori 
+      da un utente da usare nel codice*/
+
+      //let input = prompt("inserisci un numero");
+      /*qualsiasi cosa inseriremo in prompt esso restiturà una stringa
+      perciò se voglio un numero devo fare il casting*/
+      let input = parseInt( prompt("inserisci un numero"));
+      console.log(input);
+    </script>
+  </body>
+</html>
