@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Esercizio3</h1>
+    <script>
+      /* non ho seguito alla lettera la consegna, sono andato un po' a interpretazione
+ per creare il miglior codice possibile*/
+      function aggiungi_spesa(x) {
+        risp = prompt("cosa si vuole aggiungere alla spesa?");
+        x.push(risp);
+        console.log(x);
+        alert("hai aggiunto: " + risp);
+      }
+
+      function elimina_spesa(x) {
+        if (x.length > 0) {
+          let risp = x[x.length - 1];
+          x.pop();
+          console.log(x);
+          alert("Hai rimosso: " + risp);
+        } else {
+          alert("La lista è vuota, non c'è nulla da rimuovere!");
+        }
+      }
+      function spesa(x) {
+        let y = x;
+        while (true) {
+          risp = prompt(
+            "vuoi rimuovere o aggiungere un prodotto? (rimuovere/aggiungere/no/esci)"
+          );
+          switch (risp) {
+            case "rimuovere":
+              while (true) {
+                elimina_spesa(y);
+                risp_r = prompt(
+                  "si vogliono rimuovere altri prodotti? (si/no/esci)"
+                );
+                switch (risp_r) {
+                  case "no":
+                    break;
+                  case "esci":
+                    break;
+                  case "si":
+                    continue;
+                  default:
+                    alert("risposta non presente, inserisci (si/no/esci)");
+                    break;
+                }
+                if (risp_r == "no" || risp_r == "esci") {
+                  break;
+                }
+              }
+
+              break;
+            case "aggiungere":
+              while (true) {
+                aggiungi_spesa(y);
+                risp_a = prompt(
+                  "si vogliono aggiungere altri prodotti? (si/no/esci)"
+                );
+                switch (risp_a) {
+                  case "no":
+                    break;
+                  case "esci":
+                    break;
+                  case "si":
+                    continue;
+                  default:
+                    alert("risposta non presente, inserisci (si/no/esci)");
+                    break;
+                }
+                if (risp_a == "no" || risp_a == "esci") {
+                  break;
+                }
+              }
+              break;
+            case "no":
+              break;
+            case "esci":
+              break;
+            default:
+              alert("risposta non presente, inserisci (rimuovere/aggiungere/no/esci)");
+              break;
+          }
+          if (risp == "no" || risp == "esci") {
+            break;
+          }
+        }
+      }
+
+      listaSpesa = [];
+      spesa(listaSpesa);
+    </script>
+  </body>
+</html>
