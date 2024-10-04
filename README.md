@@ -4,7 +4,7 @@
 La traccia era quella di creare un form di registrazione che stampasse i dati inseriti esattamente sotto il pulsante di submit,
 ma, in più, ho voluto inserire anche un form di Login.
 
-Con questa aggiunta è sorto il problema della memorizzazione dei dati di rigistrazione e, a questo scopo, non avendo ancora affrontato nel corso alcun inguaggio o tecnologia server-side, ho deciso di tener traccia dei dati tramite il localstorage del browser.
+Con questa aggiunta è sorto il problema della memorizzazione dei dati di rigistrazione e, a questo scopo, non avendo ancora affrontato nel corso alcun inguaggio o tecnologia server-side, ho deciso di tener traccia dei dati tramite il Local Storage del browser.
 
 Infatti con questa tecnica è possibile salvare i dati e creare una sorta di DB utilizzando solo tecnologia Client-side.
 
