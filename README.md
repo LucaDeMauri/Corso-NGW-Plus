@@ -9,7 +9,7 @@ Infatti con questa tecnica è possibile salvare i dati e creare una sorta di DB 
 
 L'esercizio è stato testato solo su chrome.
 
-*PROVA*
+<h1>PROVA<h1>
 
 per verificare il funzionamento del codice basterà:
 - aprire i developer tool
@@ -17,4 +17,4 @@ per verificare il funzionamento del codice basterà:
 - cercare application e poi Local Storage
 - qui dentro una volta registrati dovrebbre comparire l'array di elementi users, se non appare vuol dire che non ha funzionato
 
-
+*
