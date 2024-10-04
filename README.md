@@ -1,7 +1,20 @@
 # Corso-NGW-Plus
 ESERCIZIO-WEEKEND
 La traccia era quella di creare un form di registrazione che stampasse i dati inseriti esattamente sotto il pulsante di submit,
-ma, in più, ho voluto aggiungere anche un form di Login.
-Con il Login è sorto il problema della memorizzazione dei dati di rigistrazione, a questo scopo, non avendo ancora affrontato nel corso alcun inguaggio o tecnologia backend, ho deciso di tener traccia dei dati tramite localstorage in modo da rimanere completamente nella tecnologia clien-side.
-Infatti con questa tecnica i dati saranno salvati sottoforma di array di oggetti nella memoria del browser e non in un file.json locale o server.
+ma, in più, ho voluto inserire anche un form di Login.
+
+Con questa aggiunta è sorto il problema della memorizzazione dei dati di rigistrazione e, a questo scopo, non avendo ancora affrontato nel corso alcun inguaggio o tecnologia server-side, ho deciso di tener traccia dei dati tramite il localstorage del browser.
+
+Infatti con questa tecnica è possibile salvare i dati e creare una sorta di DB utilizzando solo tecnologia Client-side.
+
 L'esercizio è stato testato solo su chrome.
+
+*PROVA*
+
+per verificare il funzionamento del codice basterà:
+- aprire i developer tool
+- cliccare le due parentesi angolate affianco a Network
+- cercare application e poi Local Storage
+- qui dentro una volta registrati dovrebbre comparire l'array di elementi users, se non appare vuol dire che non ha funzionato
+
+
