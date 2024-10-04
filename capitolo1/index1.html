@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Codice Esempio seconda lezione - capitolo 1</h1>
+    <script>
+      let banca = {
+        nome: "Banca d'italia",
+        valore: 1000,
+        lista_clienti: ["Luca", "Andrea", "Nicolo", "simone"],
+        stampaClienti: function () {
+          for (let i = 0; i < this.lista_clienti.length; i++) {
+            console.log(this.lista_clienti[i]);
+          }
+        },
+        rateizzazione: function () {
+          return this.valore / 12;
+        },
+      };
+      //dot-notation
+      console.log(banca.nome);
+      //richiamo metodi
+      banca.stampaClienti();
+
+      console.log(banca.rateizzazione().toPrecision(5));
+
+      //Metodi Diretti di Modifica
+      //aggiungi proprietà
+      banca["nuovo_campo"] = "nuovo_valore";
+      //modifica proprietà
+      banca["valore"] = 2000;
+      //elimina propreità
+      delete banca["nuovo_campo"];
+
+      console.log(banca);
+    </script>
+  </body>
+</html>

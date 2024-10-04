@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagina Prova</title>
+  </head>
+  <body>
+    <header></header>
+    <main id="main">
+      <h1 id="titolo">Codice Esempio seconda lezione - capitolo 3</h1>
+      <button onclick="capsScritta()">Rendi la scritta CAPS</button>
+      <button onclick="changeScritta()">Cambia la scritta</button>
+    </main>
+    <footer>
+      <div id="div1"></div>
+      <img src="img1.jpg" width="150px" height="150" id="img1" />
+      <button onclick="changeImage()">cambia immagine</button>
+      <button onclick="changeBackground()">cambia sfondo</button>
+    </footer>
+    <script>
+      let h1 = document.getElementById("titolo");
+      //quando clicco fai partire la funzione specificata
+      h1.addEventListener("click", function () {
+        console.log("cliccato");
+      });
+
+      let img = document.getElementById("img1");
+      img.addEventListener("mouseenter", changeImage);//funzioni senza parametri si scrivono senza tonde
+
+      function capsScritta() {
+        const h1 = document.getElementById("titolo");
+        h1.innerText = h1.innerText.toUpperCase();
+      }
+      function changeScritta() {
+        const h1 = document.getElementById("titolo");
+        h1.innerText = "Ciao Mondo";
+      }
+
+      function addScritta() {
+        let scritta_nuova = document.createElement("h1");
+        scritta_nuova.innerText = "hello world";
+        let div = document.getElementById("div1");
+        div.appendChild(scritta_nuova);
+        //document.getElementById("div1").innerHTML = "<h1>hello world</h1>";
+      }
+
+      function changeImage() {
+        let img = document.getElementById("img1");
+        img.setAttribute("src", "img2.jpg");
+      }
+
+      function changeBackground() {
+        let main = document.getElementById("main");
+        main.style.backgroundColor = "#ccc";
+      }
+    </script>
+  </body>
+</html>

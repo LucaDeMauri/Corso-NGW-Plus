@@ -6,15 +6,62 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Esercizio1</h1>
+    <h1>Esercizio1 - shopping list con oggetto</h1>
     <script>
-      function stampa(x) {
-        for (let i = 0; i < x; i++) {
-          console.log("fatto");
+      const lista = [{}];
+      function aggiungi_spesa(x) {
+        let risp = prompt("cosa si vuole aggiungere alla spesa?");
+        let risp2 = parseInt(prompt("quanti se ne vogliono aggiungere?"));
+        x[risp] = risp2;
+        alert("hai aggiunto " + risp2 + " " + risp);
+      }
+
+      function elimina_spesa(x) {
+        while (true) {
+          if (x.length == 0) {
+            alert("la lista è vuota, non c'è nulla da rimuovere");
+            break;
+          }
+          let risp = prompt("quale elemento si vuole rimuovere?");
+          if (x[risp]) {
+            delete x[risp];
+            alert("hai eliminato " + risp);
+            break;
+          } else {
+            alert("elemento non presente");
+          }
         }
       }
-      let input = parseInt(prompt("inserisci un numero"));
-      stampa(input);
+
+      function listaspesa(x) {
+        while (true) {
+          risp = prompt(
+            "vuoi visualizzare la lista?(visualizza) vui aggiungere un prodotto(aggiungi)? vuoi rimuovere un prodotto?(rimuovi) vuoi uscire(esci))"
+          );
+          switch (risp) {
+            case "visualizza":
+              console.log(x);
+              break;
+            case "aggiungi":
+              aggiungi_spesa(x);
+              break;
+            case "rimuovi":
+              elimina_spesa(x);
+              break;
+            case "esci":
+              return; /*nell'esercizio di ieri non l'ho fatto, ma effettivamente visto
+               che non si può usare break, per uscire dal while si può returnare, 
+               in modo che la funzione finisca*/
+            default:
+              alert(
+                "risposta non presente, inserisci (visualizza/aggiungi/rimuovi)"
+              );
+              break;
+          }
+        }
+      }
+
+      listaspesa(lista);
     </script>
   </body>
 </html>

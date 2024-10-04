@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Fetch</h1>
+    <button onclick="richiesta()">Connettiti</button>
+    <script>
+        //www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita
+
+        //sia le richieste che le operazioni di casting devono attendere
+        async function richiesta() {
+           let risposta = await fetch("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita")
+           console.log(risposta);
+           let rispostaJSON = await risposta.json();
+           console.log(rispostaJSON);
+        }
+        
+    </script>
+</body>
+</html>
