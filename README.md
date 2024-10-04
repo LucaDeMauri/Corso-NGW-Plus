@@ -10,9 +10,13 @@ Infatti, con questa tecnica è possibile salvare i dati e creare una sorta di da
 L'esercizio è stato testato solo su Chrome.
 
 <h3>TEST</h3> <hr> Per verificare il funzionamento del codice, è sufficiente:
+
 - Aprire i Developer Tools
+
 - Cliccare sull'icona con due parentesi angolari affianco a Network
+
 - Cercare la sezione Application e poi Local Storage
+
 - Una volta registrati, qui dentro dovrebbe comparire dentro file:// l'array di elementi "users". Se non appare, significa che non ha funzionato.
 
 <h3>ESITO FINALE</h3>
