@@ -1,0 +1,36 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="./Css/Style-Login.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form class="form_main" id="signupForm" >
+        <p class="heading">Login</p>
+
+        <div class="inputContainer">
+            <input placeholder="Email" id="email" name="email" class="inputField" type="email" required>
+        </div>
+        
+        <div class="inputContainer">
+            <input placeholder="Password" id="password" name="password" class="inputField" type="password">
+            <p id="mostra">Mostra</p>
+        </div>
+
+        <h1 id="benvenuto"></h1>
+        <div id="message" style="color: red; font-weight: bold;"></div>
+                  
+        <button id="submit-button" type="submit">Submit</button>
+        
+        <div class="signupContainer">
+            <p>non hai un account?</p>
+            <a href="sign.html">Sign Up</a>
+        </div>
+    </form>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="./JavaScript/script-login.js"></script>
+</body>
+</html>
