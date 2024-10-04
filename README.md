@@ -1,5 +1,6 @@
 # Corso-NGW-Plus
-ESERCIZIO-WEEKEND
+<h2>ESERCIZIO-WEEKEND</h2>
+<hr>
 La traccia era quella di creare un form di registrazione che stampasse i dati inseriti esattamente sotto il pulsante di submit,
 ma, in più, ho voluto inserire anche un form di Login.
 
