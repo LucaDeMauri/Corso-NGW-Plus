@@ -1,11 +1,11 @@
 # Corso-NGW-Plus
 <h2>ESERCIZIO WEEKEND</h2>
 <hr>
-La traccia richiedeva di creare un form di registrazione che stampasse i dati inseriti esattamente sotto il pulsante di submit. Tuttavia, ho deciso di aggiungere anche un form di Login.
+La traccia richiedeva di creare un form di registrazione che stampasse i dati inseriti esattamente sotto il pulsante di submit. Tuttavia, ho deciso di aggiungere anche un form di login.
 
-Con questa aggiunta è sorto il problema della memorizzazione dei dati di registrazione. Non avendo ancora affrontato nel corso alcun linguaggio o tecnologia server-side, non mi è sembrato giusto utilizzarle, così ho deciso di tenere traccia dei dati tramite il Local Storage del browser.
+Con questa aggiunta è sorto il problema della memorizzazione dei dati di registrazione. Non avendo ancora affrontato nel corso alcun linguaggio o tecnologia server-side, non mi è sembrato giusto utilizzarli, così ho deciso di tenere traccia dei dati tramite il Local Storage del browser.
 
-Infatti, con questa tecnica è possibile salvare i dati e creare una sorta di database utilizzando solo tecnologia client-side.
+Infatti, con questa tecnica è possibile salvare i dati e creare una sorta di database utilizzando solo tecnologie client-side.
 
 L'esercizio è stato testato solo su Chrome.
 
