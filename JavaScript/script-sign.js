@@ -11,25 +11,26 @@ document.getElementById("signupForm").addEventListener("submit", function(event)
 
     // Controlla se l'email è vuota
     if (!email) {
-        messageDiv.style.color = "red";
-        messageDiv.textContent = "Per favore, inserisci un'email.";
-        return;
-    }
-    if (!nome) {
-        messageDiv.style.color = "red";
-        messageDiv.textContent = "Per favore, inserisci il tuo nome.";
-        return;
-    }
-    if (!cognome) {
-        messageDiv.style.color = "red";
-        messageDiv.textContent = "Per favore, inserisci il tuo cognome.";
+        document.getElementById("message").style.color = "red";
+        document.getElementById("message").innerText = "Per favore, inserisci un'email.";
         return;
     }
     if (!password) {
-        messageDiv.style.color = "red";
-        messageDiv.textContent = "Per favore, inserisci una password.";
+        document.getElementById("message").style.color = "red";
+        document.getElementById("message").innerText = "Per favore, inserisci una password.";
         return;
     }
+    if (!nome) {
+        document.getElementById("message").style.color = "red";
+        document.getElementById("message").innerText = "Per favore, inserisci il tuo nome.";
+        return;
+    }
+    if (!cognome) {
+        document.getElementById("message").style.color = "red";
+        document.getElementById("message").innerText = "Per favore, inserisci il tuo cognome.";
+        return;
+    }
+    
 
      // Hash della password usando SHA-256, per dare all'esercizio una parvenza di professionalità
      const passwordHashata = CryptoJS.SHA256(password).toString();//CryprtoJS restituisce un oggetto wordarray
@@ -57,8 +58,8 @@ document.getElementById("signupForm").addEventListener("submit", function(event)
      //una cosa da notare è che ogni volta reinserisco completamente l'oggetto users nel localstorge, invece di aggiungere semplicemente un altro user
 
      
-     messageDiv.style.color = "green";
-     messageDiv.textContent = "Registrazione avvenuta con successo";
+     document.getElementById("message").style.color = "green";
+     document.getElementById("message").innerText = "Registrazione avvenuta con successo";
      
    
      document.getElementById("signupForm").reset();

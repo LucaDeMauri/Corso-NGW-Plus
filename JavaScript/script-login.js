@@ -5,13 +5,13 @@ document.getElementById("signupForm").addEventListener("submit", function(event)
     let  password = document.getElementById("password").value;
 
     if (!email) {
-        messageDiv.style.color = "red";
-        messageDiv.textContent = "Per favore, inserisci un'email.";
+        document.getElementById("message").style.color = "red";
+        document.getElementById("message").innerText = "Per favore, inserisci un'email.";
         return;
     }
     if (!password) {
-        messageDiv.style.color = "red";
-        messageDiv.textContent = "Per favore, inserisci una password.";
+        document.getElementById("message").style.color = "red";
+        document.getElementById("message").innerText = "Per favore, inserisci una password.";
         return;
     }
 
