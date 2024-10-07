@@ -39,10 +39,10 @@ document.getElementById("signupForm").addEventListener("submit", function(event)
     //da notare che toString() restituisce un valore esadecimale solo nel caso di wordarray, nel resto dei casi restituisce una stringa normale
 
      const user = {
-         email: email,
-         password: passwordHashata,  
          nome: nome,
          cognome: cognome,
+         email: email,
+         password: passwordHashata,  
      };
 
      // tramite questa riga di codice non faccio altro che convertire la stringa json in un array di oggetti js
