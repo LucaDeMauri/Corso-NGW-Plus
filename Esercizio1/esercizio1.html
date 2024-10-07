@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Css/Style-Esercizio1.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Vuoi scoprire come fare un piatto?</h1>
+    <h3>Scoprilo qui!</h3>
+    <button onclick="richiesta()">Scopri</button>
+    <section id="selezione_piatti"></section>
+    <script>
+      
+
+      function crea_lista(lista_di_piatti) {
+        for (let i = 0; i < lista_di_piatti.length; i++) {
+
+          let div = document.createElement("div");
+          div.style.display = "flex";
+          div.style.flexDirection = "column";
+          div.style.alignItems = "center"; 
+
+          let hNomeMeal = document.createElement("h3");
+          hNomeMeal.style.textAlign = "center";
+          hNomeMeal.innerHTML = lista_di_piatti[i].strMeal;
+
+          let AreaMeal = document.createElement("p");
+          AreaMeal.style.textAlign = "center";
+          AreaMeal.innerHTML = lista_di_piatti[i].strArea;
+        
+          let lista_ingredienti = document.createElement("ul");
+          lista_ingredienti.style.textAlign = "center";
+
+          for (let j = 1; j <= 20; j++) {
+            if (lista_di_piatti[i]["strIngredient" + j]) {
+              let li = document.createElement("li");
+              li.innerHTML = lista_di_piatti[i]["strMeasure" + j] + " " + lista_di_piatti[i]["strIngredient" + j];
+              lista_ingredienti.appendChild(li);
+            }
+          }
+
+        let imageMeal = document.createElement("img");
+        imageMeal.style.textAlign = "center";
+        imageMeal.src = lista_di_piatti[i].strMealThumb;
+        imageMeal.width = 380;
+        imageMeal.height - 280;
+
+
+        let instrMeal = document.createElement("p");
+        instrMeal.style.textAlign = "center";
+        instrMeal.innerHTML = lista_di_piatti[i].strInstructions;
+    
+
+        div.appendChild(hNomeMeal);
+        div.appendChild(AreaMeal);
+        div.appendChild(imageMeal);
+        div.appendChild(lista_ingredienti);
+        div.appendChild(instrMeal);
+
+        document.getElementById("selezione_piatti").appendChild(div);
+        }
+      }
+
+      async function richiesta() {
+        let input = prompt("inserisci un piatto");
+        let risposta = await fetch(
+           "https://www.themealdb.com/api/json/v1/1/search.php?s="+ input
+        );
+        console.log(risposta);
+        let lista_di_piatti = await risposta.json();
+        console.log(lista_di_piatti);
+        crea_lista(lista_di_piatti.meals);
+      }
+    </script>
+  </body>
+</html>

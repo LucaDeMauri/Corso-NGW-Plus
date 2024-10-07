@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <h1>LocalStorage</h1>
+        <h3>Login</h3>
+        <input type="text" id="campo_login" placeholder="nome utente">
+        <input type="password" id="password_login" placeholder="password">
+        <button onclick="accedi_dash()">Accedi</button>
+    </main>
+    <footer></footer>
+    <script>
+        function accedi_dash() {
+            let input = document.getElementById("campo_login").value;
+            let input_pass = document.getElementById("password_login").value;
+            const utente = {
+                username: input,
+                password: input_pass
+            }
+            if(input !=""){
+                localStorage.setItem("utente", JSON.stringify(utente));
+                window.location.href = "./dashboard.html";
+            }
+        
+        }
+    </script>
+</body>
+</html>

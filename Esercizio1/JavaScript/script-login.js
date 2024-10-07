@@ -26,6 +26,7 @@ document.getElementById("signupForm").addEventListener("submit", function(event)
             document.getElementById("message").style.color = "green";
             document.getElementById("message").innerText = users[i].nome + " " + users[i].cognome;
             document.getElementById("benvenuto").innerText = "Benvenuto";
+            window.location.href = "./esercizio1.html";
             return;
         }
         else{
@@ -47,4 +48,6 @@ document.getElementById("mostra").addEventListener("click", function() {
     } else {
         password.type = "password";
     }
+
+
 })
