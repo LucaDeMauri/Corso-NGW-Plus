@@ -1,0 +1,33 @@
+*{
+  font-family: 'Montserrat', sans-serif;
+}
+#root{
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.middle-page{
+  display: flex;
+  margin: 1.5% 0 3% 0;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  height: 30%;
+  gap: 10px;
+  
+}
+
+.Sasso-Carta-Forbici{
+  display: flex;
+  width: 94%;
+  margin: 0 auto;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  height: 35%;
+  gap: 10px;
+  background-color: #fafafa;
+  border: 1px solid #ababab;
+  border-radius: 20px;
+
+}
