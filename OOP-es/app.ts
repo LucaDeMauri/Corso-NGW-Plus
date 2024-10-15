@@ -2,7 +2,7 @@ class Veicolo {
     Marca: string
     Modello: string
     velocitàMassima: number
-    targa: string
+    readonly targa: string
     constructor(marca: string, modello: string, velocitàMassima: number, targa: string) {
         this.Marca = marca
         this.Modello = modello
