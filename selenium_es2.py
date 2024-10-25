@@ -105,11 +105,6 @@ def estrai_prodotto(driver):
             except Exception as e:
                 logging.error(f"Errore nel prendere il prezzo: {str(e)}")
 
-
-
-            #il codice commentato è la mia prova di entrare in un determinato prodotto estrarre tutti i dettagli
-            #uscire ed entrare un altro prodotto, ma dopo aver stampato i dettagli del primo non riesce ad entrare nel secondo
-
             # product.click()
             #     # Trova i dettagli del prodotto
             # details_list = driver.find_elements(By.CSS_SELECTOR, "ul.a-unordered-list.a-nostyle.a-vertical.a-spacing-none li")
@@ -140,3 +135,29 @@ accetta_cookie(driver)
 inserisci_prodotto(driver)
 clicca_ricerca(driver)
 estrai_prodotto(driver)
+
+
+# try:
+#         # Individua i prodotti utilizzando il selettore CSS
+#         products = WebDriverWait(driver, 10).until(
+#             EC.presence_of_all_elements_located((By.CSS_SELECTOR, "div.a-section a-spacing-small puis-padding-left-small puis-padding-right-small"))
+#         )
+#         if not products:
+#             logging.error("Nessun prodotto trovato.")
+#             return
+        
+#         limited_products = products[:10]
+        
+
+#         for product in limited_products:
+#             try:
+#                 name = WebDriverWait(driver, 10).until( product.find_element((By.CSS_SELECTOR, "span.a-size-base-plus a-color-base a-text-normal")))
+#                 price_whole = WebDriverWait(driver, 10).until( product.find_element((By.CSS_SELECTOR, "span.a-price-whole")))
+#                 price_fraction = WebDriverWait(driver, 10).until(product.find_element((By.CSS_SELECTOR, "span.a-price-fraction")))
+
+                
+#                 full_string = f"il prodotto è {name}\nil prezzo é di:{price_whole.text},{price_fraction.text} €"
+#                 logging.info(full_string)
+               
+#             except Exception as e:
+#                 logging.error(f"Errore nel prendere il prezzo: {str(e)}")
